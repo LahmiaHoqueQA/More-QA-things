@@ -1,0 +1,8 @@
+Explain the difference between == and .equals() in Java.
+Answer: == checks if two references point to the same object, while .equals() checks if two objects are logically equivalent.
+
+[09:34] Izzah Binti Mohd Zafer (Guest)
+Selected questions: In Java, what is the purpose of a constructor?
+Answer: A constructor initializes an object’s state when it is created.
+
+explain the different between a parameter and an argument?

@@ -1,0 +1,39 @@
+Task 1:
+
+    "1. Create a Working Selenium Project:\n"
+    "   - Set up a new project in IntelliJ
+    "   - Install the required dependencies (e.g., Selenium library for Java). Ensure you have the WebDriver installed (e.g., ChromeDriver for Chrome).\n",
+
+    "2. Retrieve the URL of Google:\n"
+    "   - Use Selenium to open a browser and navigate to 'https://www.google.com'.\n",
+    
+    "3. Search for Cats:\n"
+    "   - Locate the search box using its element selector (e.g., name, id) and input the search term 'cats'.\n"
+    "   - Submit the search form.\n",
+    
+    "4. Get the Title of the Page:\n"
+    "   - After the results load, choose a specific result (e.g., the first one).\n"
+    "   - Retrieve the title of the page using `driver.title`.\n",
+    
+
+Additonal Goal:
+
+    "5. Print the URL of the Image:\n"
+    "   - For the selected result, find the image and get its URL.\n"
+    "   - Print the URL to the console or save it to a file.\n"
+
+
+
+For reference the BeforeClass should look something like the following:
+
+
+    @BeforeClass
+    public static void setUP() {
+        System.setProperty("webdriver.gecko.driver", "src/test/resources/webdrivers/geckodriver.exe");
+
+        driver = new FirefoxDriver();
+        driver.manage().window().fullscreen();
+        System.out.println("Starting..");
+    }
+
+
